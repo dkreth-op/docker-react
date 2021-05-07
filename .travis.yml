@@ -1,9 +1,9 @@
 sudo: required
 language: generic
 services:
- - docker
+  - docker
 
- before_install:
+before_install:
   - docker build -t dk170589/docker-react -f Dockerfile.dev .
 
 script:
